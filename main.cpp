@@ -122,7 +122,7 @@ void executeSQL(PGconn* conn, const std::string& sql, const std::string& sqlFile
 
 int main() {
     // Connect to PostgreSQL
-    PGconn* conn = PQconnectdb("host=localhost dbname=dota2 user=postgres password=postgres");
+    PGconn* conn = PQconnectdb("host=localhost dbname=dbname user=user password=password");
     checkConnection(conn);
 
     while (true) {
